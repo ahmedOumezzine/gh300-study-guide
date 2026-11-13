@@ -1,0 +1,38 @@
+:root {
+  --vp-font-family-base: Inter, system-ui, sans-serif;
+  --vp-c-brand-1: #175d53;
+  --vp-c-brand-2: #1a6659;
+  --vp-c-brand-3: #175d53;
+  --vp-c-brand-soft: #d8f3eb;
+  --vp-home-hero-name-color: var(--vp-c-brand-1);
+}
+
+.dark {
+  --vp-c-brand-1: #84dfc8;
+  --vp-c-brand-2: #237969;
+  --vp-c-brand-3: #1a6659;
+  --vp-c-brand-soft: #203f39;
+}
+
+.VPHome .VPHero {
+  background: radial-gradient(ellipse at 80% 0%, var(--vp-c-brand-soft), transparent 64%);
+}
+
+.VPHome .VPFeature {
+  border-color: var(--vp-c-divider);
+}
+
+.VPHome .VPFeature.link:hover {
+  border-color: var(--vp-c-brand-1);
+}
+
+:where(a, button):focus-visible {
+  outline: 2px solid var(--vp-c-brand-1);
+  outline-offset: 3px;
+}
+
+.home-resources {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
