@@ -11,8 +11,6 @@ npm ci
 npm run docs:dev
 ```
 
-If the lockfile is missing from an initial checkout, run npm install once to generate it, then use npm ci for subsequent clean installs.
-
 Open <http://localhost:5173/gh300-study-guide/> for English or <http://localhost:5173/gh300-study-guide/fr/> for French.
 
 | Command | Purpose |
