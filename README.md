@@ -1,37 +1,59 @@
 # Certiva — GH-300 Study Guide
 
-A bilingual VitePress study guide for the GitHub Copilot GH-300 certification. The initial site contains six domain overviews, official references, and a hands-on lab in English and French.
+Prepare for the **GitHub Copilot (GH-300)** certification with bilingual study notes, hands-on practice, and official references. Commencez par les six domaines de compétences, puis mettez vos acquis en pratique dans un atelier.
 
-## Prerequisites and local development
+| | English | Français |
+| --- | --- | --- |
+| **Study guide / Guide d’étude** | [Open the guide](https://ahmedoumezzine.github.io/gh300-study-guide/) | [Ouvrir le guide](https://ahmedoumezzine.github.io/gh300-study-guide/fr/) |
+| **Hands-on lab / Atelier pratique** | [Compare two prompts](https://ahmedoumezzine.github.io/gh300-study-guide/labs/) | [Comparer deux requêtes](https://ahmedoumezzine.github.io/gh300-study-guide/fr/labs/) |
+| **Certiva practice exams / Examens blancs Certiva** | [Practice for GH-300](https://certiva.oumezzine.com/en/exams/github-copilot-gh-300-practice) | [Préparer GH-300](https://certiva.oumezzine.com/fr/examens/preparation-certification-gh-300) |
 
-Use Node.js 24 LTS (see `.nvmrc`) and npm. From the repository root:
+## What you’ll study / Au programme
+
+| English | Français |
+| --- | --- |
+| [Responsible AI](docs/responsible-ai/index.md) | [IA responsable](docs/fr/responsible-ai/index.md) |
+| [Copilot features](docs/copilot-features/index.md) | [Fonctionnalités de Copilot](docs/fr/copilot-features/index.md) |
+| [Data and architecture](docs/data-architecture/index.md) | [Données et architecture](docs/fr/data-architecture/index.md) |
+| [Prompt engineering](docs/prompt-engineering/index.md) | [Conception des requêtes](docs/fr/prompt-engineering/index.md) |
+| [Developer productivity](docs/developer-productivity/index.md) | [Productivité des développeurs](docs/fr/developer-productivity/index.md) |
+| [Privacy and safeguards](docs/privacy-safeguards/index.md) | [Confidentialité et protections](docs/fr/privacy-safeguards/index.md) |
+
+Use the [official Microsoft Learn exam objectives](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-300) to plan your study and [GitHub Docs](https://docs.github.com/en/copilot) to check current Copilot behavior.
+
+Consultez les [objectifs officiels en français](https://learn.microsoft.com/fr-fr/credentials/certifications/resources/study-guides/gh-300) pour planifier votre révision et la [documentation GitHub](https://docs.github.com/fr/copilot) pour vérifier le fonctionnement actuel de Copilot.
+
+## Local development / Développement local
+
+Use **Node.js 24 LTS** (see [`.nvmrc`](.nvmrc)) and **npm**. Exécutez les commandes suivantes à la racine du dépôt.
 
 ```sh
 npm ci
 npm run docs:dev
 ```
 
-Open <http://localhost:5173/gh300-study-guide/> for English or <http://localhost:5173/gh300-study-guide/fr/> for French.
+Open the local guide in [English](http://localhost:5173/gh300-study-guide/) or [français](http://localhost:5173/gh300-study-guide/fr/). If VitePress selects another port, use the address printed in the terminal.
 
-| Command | Purpose |
+| Command | Purpose / Utilité |
 | --- | --- |
-| `npm run docs:dev` | Start the development server with live reload |
-| `npm run docs:build` | Build the static site and check internal Markdown links |
-| `npm run docs:preview` | Serve the production build locally |
+| `npm run docs:dev` | Start the development server / Démarrer le serveur local |
+| `npm run docs:build` | Build the site and validate internal Markdown links / Générer le site et vérifier les liens Markdown internes |
+| `npm run docs:preview` | Preview the generated site after building / Prévisualiser le site généré |
 
-## Project structure
+## Repository layout / Structure du dépôt
 
-English pages live at the root of `docs/`, the default VitePress locale. French pages under `docs/fr/` mirror the English paths so the language switcher can open the corresponding page. Each of the six domain directories has a starter overview. Both locales also have resources and labs.
+| Path / Chemin | Contents / Contenu |
+| --- | --- |
+| [`docs/`](docs/) | English pages / Pages en anglais |
+| [`docs/fr/`](docs/fr/) | French pages at matching relative paths / Pages en français avec les mêmes chemins relatifs |
+| [`docs/.vitepress/`](docs/.vitepress/) | VitePress configuration, navigation, search, and theme |
+| [`docs/public/`](docs/public/) | Static assets / Fichiers statiques |
+| [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) | GitHub Pages deployment / Déploiement GitHub Pages |
 
-- `docs/.vitepress/config.ts` defines navigation, locales, search, and the GitHub Pages base path.
-- `docs/.vitepress/theme/` contains shared styling.
-- `docs/public/` contains static site assets.
-- `.github/workflows/deploy.yml` builds and deploys the site.
+## Deployment / Déploiement
 
-## GitHub Pages
+GitHub Pages uses **GitHub Actions** as its publishing source. The workflow runs on pushes to `main` or on manual dispatch and publishes `docs/.vitepress/dist` under `/gh300-study-guide/`. Check the [workflow history](https://github.com/ahmedOumezzine/gh300-study-guide/actions/workflows/deploy.yml) for build and deployment status.
 
-The workflow builds with `npm ci` and publishes `docs/.vitepress/dist`. It runs on updates to `main` and when explicitly dispatched. To enable hosting, select **GitHub Actions** as the publishing source under **Settings → Pages**. The expected address is <https://ahmedoumezzine.github.io/gh300-study-guide/>.
+## Contributing / Contribution
 
-## Contributing
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for paired translations, official sources, and pull request guidance.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for updating study notes, reporting outdated features, proposing translations, and submitting pull requests. Pour modifier une page, vérifiez aussi la page équivalente dans l’autre langue.
