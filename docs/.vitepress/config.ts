@@ -46,14 +46,14 @@ export default defineConfig({
     root: {
       label: 'English',
       lang: 'en',
-      description: 'Master GitHub Copilot and prepare for certification with Certiva.',
+      description: 'Master GitHub Copilot and prepare for certification.',
       themeConfig: navigation('en'),
     },
     fr: {
       label: 'Français',
       lang: 'fr',
       title: 'Guide d’étude GH-300',
-      description: 'Maîtrisez GitHub Copilot et préparez-vous à la certification avec Certiva.',
+      description: 'Maîtrisez GitHub Copilot et préparez-vous à la certification.',
       themeConfig: {
         ...navigation('fr'),
         outline: { label: 'Sur cette page' },

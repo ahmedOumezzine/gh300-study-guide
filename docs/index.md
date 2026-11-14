@@ -1,16 +1,16 @@
 ---
 layout: home
 hero:
-  name: Certiva
+  name: GitHub Copilot
   text: GH-300 Study Guide
   tagline: Master GitHub Copilot and prepare for certification
   actions:
     - theme: brand
-      text: Certiva practice exams
-      link: https://certiva.oumezzine.com/en/exams/github-copilot-gh-300-practice
-    - theme: alt
-      text: Try a hands-on lab
+      text: Start the hands-on lab
       link: /labs/
+    - theme: alt
+      text: View the official objectives
+      link: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-300
 features:
   - title: "Responsible AI"
     details: "Review generated code for correctness, security, and unintended effects before integrating it."
@@ -34,6 +34,12 @@ features:
 
 <div class="vp-doc home-resources">
 
+## Suggested study path
+
+1. Choose a domain above using the [official GH-300 objectives](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-300).
+2. In the [prompt comparison lab](./labs/), ask for the same function with two prompts. Review both results and compare them with the same assertions.
+3. Revisit the domains you found difficult and check your understanding against the official objectives.
+
 ## Learning resources
 
 Find the official study guide, product documentation, and training in [learning resources](./resources/).
@@ -44,6 +50,6 @@ In the [first lab](./labs/), compare two prompts and verify the output with asse
 
 ## Exam preparation
 
-Review the [official objectives](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-300), then check your understanding with the [Certiva practice exams](https://certiva.oumezzine.com/en/exams/github-copilot-gh-300-practice).
+Use the [official objectives](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-300) as a revision checklist before the exam.
 
 </div>

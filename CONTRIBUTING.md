@@ -1,4 +1,4 @@
-# Contributing to Certiva
+# Contributing to the GH-300 Study Guide
 
 - **Improve study notes.** Start with the matching objective in the [official GH-300 guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-300). Write an original explanation and use small, reproducible examples.
 - **Add official references.** Link directly to the relevant GitHub Docs or Microsoft Learn page. Verify the feature and any plan, platform, or policy conditions that affect the example.

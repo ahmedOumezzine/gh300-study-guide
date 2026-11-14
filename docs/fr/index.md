@@ -1,16 +1,16 @@
 ---
 layout: home
 hero:
-  name: Certiva
+  name: GitHub Copilot
   text: Guide d’étude GH-300
   tagline: Maîtrisez GitHub Copilot et préparez-vous à la certification
   actions:
     - theme: brand
-      text: Examens blancs Certiva
-      link: https://certiva.oumezzine.com/fr/examens/preparation-certification-gh-300
-    - theme: alt
-      text: Essayer un atelier
+      text: Commencer l’atelier
       link: /fr/labs/
+    - theme: alt
+      text: Voir les objectifs officiels
+      link: https://learn.microsoft.com/fr-fr/credentials/certifications/resources/study-guides/gh-300
 features:
   - title: "IA responsable"
     details: "Relisez le code généré pour vérifier sa justesse, sa sécurité et ses effets imprévus avant de l’intégrer."
@@ -34,6 +34,12 @@ features:
 
 <div class="vp-doc home-resources">
 
+## Parcours conseillé
+
+1. Choisissez un domaine ci-dessus à partir des [objectifs officiels GH-300](https://learn.microsoft.com/fr-fr/credentials/certifications/resources/study-guides/gh-300).
+2. Dans [l’atelier de comparaison](./labs/), demandez la même fonction avec deux requêtes différentes. Relisez les résultats et comparez-les avec les mêmes assertions.
+3. Revenez sur les domaines qui vous ont posé problème et vérifiez vos acquis à partir des objectifs officiels.
+
 ## Ressources d’apprentissage
 
 Retrouvez le guide officiel, la documentation produit et les parcours de formation dans les [ressources](./resources/).
@@ -44,6 +50,6 @@ Dans le [premier atelier](./labs/), comparez deux requêtes et vérifiez le rés
 
 ## Préparation à l’examen
 
-Consultez les [objectifs officiels](https://learn.microsoft.com/fr-fr/credentials/certifications/resources/study-guides/gh-300), puis évaluez vos acquis avec les [examens blancs Certiva](https://certiva.oumezzine.com/fr/examens/preparation-certification-gh-300).
+Utilisez les [objectifs officiels](https://learn.microsoft.com/fr-fr/credentials/certifications/resources/study-guides/gh-300) comme liste de révision avant l’examen.
 
 </div>
