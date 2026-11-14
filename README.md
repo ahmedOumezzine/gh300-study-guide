@@ -2,6 +2,14 @@
 
 Prepare for the **GitHub Copilot (GH-300)** certification with bilingual study notes, hands-on practice, and official references. Commencez par les six domaines de compétences, puis mettez vos acquis en pratique dans un atelier.
 
+## Commencer ici / Start here
+
+| Page | Contenu / Contents |
+| --- | --- |
+| [Ateliers / Hands-on labs](labs/README.md) | Exercices bilingues avec des étapes et des résultats à vérifier / Bilingual exercises with steps and results to check |
+| [Défi pratique / Hands-on challenge](Challenge.md) | Un exercice guidé de conception, d’implémentation et de test / A guided design, implementation, and testing exercise |
+| [Ressources / Learning resources](GitHub-Copilot-Links.md) | Objectifs de l’examen, documentation et formation / Exam objectives, documentation, and training |
+
 | | English | Français |
 | --- | --- | --- |
 | **Study guide / Guide d’étude** | [Open the guide](https://ahmedoumezzine.github.io/gh300-study-guide/) | [Ouvrir le guide](https://ahmedoumezzine.github.io/gh300-study-guide/fr/) |
