@@ -1,4 +1,31 @@
 import { defineConfig, type DefaultTheme } from 'vitepress'
+import type MarkdownIt from 'markdown-it'
+
+function wrapStudySections(md: MarkdownIt) {
+  md.core.ruler.after('block', 'study-section-cards', state => {
+    const tokens: typeof state.tokens = []
+    let sectionOpen = false
+
+    const addHtml = (content: string) => {
+      const token = new state.Token('html_block', '', 0)
+      token.block = true
+      token.content = content
+      tokens.push(token)
+    }
+
+    for (const token of state.tokens) {
+      if (token.type === 'heading_open' && token.tag === 'h2') {
+        if (sectionOpen) addHtml('</section>\n')
+        addHtml('<section class="study-section-card">\n')
+        sectionOpen = true
+      }
+      tokens.push(token)
+    }
+
+    if (sectionOpen) addHtml('</section>\n')
+    state.tokens = tokens
+  })
+}
 
 const domains = [
   { slug: 'responsible-ai', en: 'Use GitHub Copilot responsibly', fr: 'Utiliser GitHub Copilot de manière responsable' },
@@ -15,6 +42,12 @@ function navigation(language: 'en' | 'fr'): DefaultTheme.Config {
   const resources = { text: french ? 'Ressources' : 'Resources', link: `${prefix}resources/` }
   const labs = { text: french ? 'Ateliers' : 'Labs', link: `${prefix}labs/` }
   const examTips = { text: french ? 'Conseils d’examen' : 'Exam tips', link: `${prefix}exam-tips/` }
+  const exams = {
+    text: french ? 'Examens' : 'Exams',
+    link: french
+      ? 'https://certiva.oumezzine.com/fr/examens/preparation-certification-gh-300'
+      : 'https://certiva.oumezzine.com/en/exams/github-copilot-gh-300-practice',
+  }
   const capabilities = {
     text: french ? 'Capacités et politiques de Copilot' : 'Copilot capabilities & policies',
     link: `${prefix}copilot-capabilities/`,
@@ -26,11 +59,12 @@ function navigation(language: 'en' | 'fr'): DefaultTheme.Config {
   const studyLinks = [...domainLinks.slice(0, 2), capabilities, ...domainLinks.slice(2)]
 
   return {
+    siteTitle: 'Certiva',
     nav: [
-      { text: french ? 'Domaines' : 'Study domains', items: studyLinks },
-      labs,
+      { text: french ? 'Accueil' : 'Home', link: prefix },
+      exams,
+      { text: french ? 'Parcours' : 'Learning paths', items: studyLinks },
       resources,
-      examTips,
     ],
     sidebar: {
       [prefix]: [
@@ -48,6 +82,7 @@ export default defineConfig({
   base: '/gh300-study-guide/',
   title: 'GH-300 Study Guide',
   head: [['link', { rel: 'icon', type: 'image/svg+xml', href: '/gh300-study-guide/favicon.svg' }]],
+  markdown: { config: wrapStudySections },
   locales: {
     root: {
       label: 'English',
@@ -75,6 +110,7 @@ export default defineConfig({
     },
   },
   themeConfig: {
+    siteTitle: 'Certiva',
     socialLinks: [
       { icon: 'github', link: 'https://github.com/ahmedOumezzine/gh300-study-guide' },
     ],
