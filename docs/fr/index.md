@@ -12,22 +12,22 @@ hero:
       text: Voir les objectifs officiels
       link: https://learn.microsoft.com/fr-fr/credentials/certifications/resources/study-guides/gh-300
 features:
-  - title: "IA responsable"
+  - title: "IA responsable · 15–20 %"
     details: "Relisez le code généré pour vérifier sa justesse, sa sécurité et ses effets imprévus avant de l’intégrer."
     link: /fr/responsible-ai/
-  - title: "Fonctionnalités de Copilot"
+  - title: "Fonctionnalités de Copilot · 25–30 %"
     details: "Explorez Copilot dans l’éditeur et le terminal, puis repérez où les organisations gèrent les fonctionnalités et les politiques."
     link: /fr/copilot-features/
-  - title: "Données et architecture"
+  - title: "Données et architecture · 10–15 %"
     details: "Suivez le parcours d’une requête jusqu’à la suggestion et repérez où le contexte et le filtrage influencent le résultat."
     link: /fr/data-architecture/
-  - title: "Conception des requêtes"
+  - title: "Conception des requêtes · 10–15 %"
     details: "Donnez à Copilot un objectif précis, le contexte pertinent et des exemples du résultat attendu."
     link: /fr/prompt-engineering/
-  - title: "Productivité des développeurs"
+  - title: "Productivité des développeurs · 10–15 %"
     details: "Utilisez Copilot pour rédiger des tests, documenter le comportement du code et vérifier une refactorisation à partir des exigences existantes."
     link: /fr/developer-productivity/
-  - title: "Confidentialité et protections"
+  - title: "Confidentialité et protections · 10–15 %"
     details: "Repérez les paramètres d’exclusion de contenu et de correspondance avec le code public, puis vérifiez les limites de chaque contrôle."
     link: /fr/privacy-safeguards/
 ---

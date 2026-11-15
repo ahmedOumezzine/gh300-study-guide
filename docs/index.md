@@ -12,22 +12,22 @@ hero:
       text: View the official objectives
       link: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-300
 features:
-  - title: "Responsible AI"
+  - title: "Responsible AI · 15–20%"
     details: "Review generated code for correctness, security, and unintended effects before integrating it."
     link: /responsible-ai/
-  - title: "Copilot features"
+  - title: "Copilot features · 25–30%"
     details: "Explore Copilot in the editor and terminal, and find where organizations manage availability and policies."
     link: /copilot-features/
-  - title: "Data and architecture"
+  - title: "Data and architecture · 10–15%"
     details: "Trace how a request becomes a suggestion and identify where context and filtering affect the result."
     link: /data-architecture/
-  - title: "Prompt engineering"
+  - title: "Prompt engineering · 10–15%"
     details: "Give Copilot a concrete goal, relevant context, and examples of the desired output."
     link: /prompt-engineering/
-  - title: "Developer productivity"
+  - title: "Developer productivity · 10–15%"
     details: "Use Copilot to draft tests, document behavior, and review a refactor against existing requirements."
     link: /developer-productivity/
-  - title: "Privacy and safeguards"
+  - title: "Privacy and safeguards · 10–15%"
     details: "Locate content exclusion and public code matching settings, then review the limits of each control."
     link: /privacy-safeguards/
 ---
