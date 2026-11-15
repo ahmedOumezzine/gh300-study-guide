@@ -28,12 +28,36 @@ function wrapStudySections(md: MarkdownIt) {
 }
 
 const domains = [
-  { slug: 'responsible-ai', en: 'Use GitHub Copilot responsibly', fr: 'Utiliser GitHub Copilot de manière responsable' },
-  { slug: 'copilot-features', en: 'Use GitHub Copilot features', fr: 'Utiliser les fonctionnalités de GitHub Copilot' },
-  { slug: 'data-architecture', en: 'Understand GitHub Copilot data and architecture', fr: 'Comprendre les données et l’architecture de GitHub Copilot' },
-  { slug: 'prompt-engineering', en: 'Apply prompt engineering and context crafting', fr: 'Appliquer la conception des prompts et du contexte' },
-  { slug: 'developer-productivity', en: 'Improve developer productivity with GitHub Copilot', fr: 'Améliorer la productivité avec GitHub Copilot' },
-  { slug: 'privacy-safeguards', en: 'Configure privacy, content exclusions, and safeguards', fr: 'Configurer la confidentialité, les exclusions de contenu et les protections' },
+  {
+    slug: 'responsible-ai',
+    en: 'Use GitHub Copilot responsibly',
+    fr: 'Utiliser GitHub Copilot de manière responsable',
+  },
+  {
+    slug: 'copilot-features',
+    en: 'Use GitHub Copilot features',
+    fr: 'Utiliser les fonctionnalités de GitHub Copilot',
+  },
+  {
+    slug: 'data-architecture',
+    en: 'Understand GitHub Copilot data and architecture',
+    fr: 'Comprendre les données et l’architecture de GitHub Copilot',
+  },
+  {
+    slug: 'prompt-engineering',
+    en: 'Apply prompt engineering and context crafting',
+    fr: 'Appliquer la conception des prompts et du contexte',
+  },
+  {
+    slug: 'developer-productivity',
+    en: 'Improve developer productivity with GitHub Copilot',
+    fr: 'Améliorer la productivité avec GitHub Copilot',
+  },
+  {
+    slug: 'privacy-safeguards',
+    en: 'Configure privacy, content exclusions, and safeguards',
+    fr: 'Configurer la confidentialité, les exclusions de contenu et les protections',
+  },
 ] as const
 
 function navigation(language: 'en' | 'fr'): DefaultTheme.Config {
@@ -72,7 +96,10 @@ function navigation(language: 'en' | 'fr'): DefaultTheme.Config {
           text: french ? 'Domaines officiels GH-300' : 'Official GH-300 domains',
           items: studyLinks,
         },
-        { text: french ? 'Préparation' : 'Preparation', items: [labs, resources, examTips] },
+        {
+          text: french ? 'Préparation' : 'Preparation',
+          items: [labs, resources, examTips],
+        },
       ],
     },
   }
@@ -112,7 +139,10 @@ export default defineConfig({
   themeConfig: {
     siteTitle: 'Certiva',
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/ahmedOumezzine/gh300-study-guide' },
+      {
+        icon: 'github',
+        link: 'https://github.com/ahmedOumezzine/gh300-study-guide',
+      },
     ],
     search: {
       provider: 'local',

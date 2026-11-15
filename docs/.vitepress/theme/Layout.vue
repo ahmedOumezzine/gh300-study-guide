@@ -6,6 +6,7 @@ import StudyDocHeader from './components/StudyDocHeader.vue'
 import StudyDocRail from './components/StudyDocRail.vue'
 
 const { page, frontmatter } = useData()
+
 const isStudyPage = computed(() => {
   const relativePath = page.value.relativePath.replace(/\\/g, '/')
   const segments = relativePath.split('/').filter(Boolean)
@@ -13,10 +14,10 @@ const isStudyPage = computed(() => {
 
   return Boolean(
     slug &&
-    slug !== 'index' &&
-    slug !== 'responsible-ai' &&
-    frontmatter.value.layout !== 'home' &&
-    frontmatter.value.layout !== false,
+      slug !== 'index' &&
+      slug !== 'responsible-ai' &&
+      frontmatter.value.layout !== 'home' &&
+      frontmatter.value.layout !== false,
   )
 })
 </script>

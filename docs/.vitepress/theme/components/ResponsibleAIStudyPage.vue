@@ -76,11 +76,31 @@ const english: PageCopy = {
   coverageIntro:
     'The Microsoft study guide places this domain in two skill areas. This table maps each official objective to the notes below.',
   coverageRows: [
-    { objective: 'Describe risks and limitations of Generative AI tools', section: 'Risks and limitations', href: '#risks-and-limitations' },
-    { objective: 'Describe ethical and responsible AI usage', section: 'Responsible AI principles', href: '#responsible-ai-principles' },
-    { objective: 'Identify potential harms and mitigation strategies of AI usage', section: 'Match a harm to a mitigation', href: '#harm-to-mitigation' },
-    { objective: 'Explain the need to validate AI output', section: 'Validate before accepting', href: '#validate-before-accepting' },
-    { objective: 'Identify how to operate GitHub Copilot responsibly', section: 'Responsible operation workflow', href: '#responsible-operation-workflow' },
+    {
+      objective: 'Describe risks and limitations of Generative AI tools',
+      section: 'Risks and limitations',
+      href: '#risks-and-limitations',
+    },
+    {
+      objective: 'Describe ethical and responsible AI usage',
+      section: 'Responsible AI principles',
+      href: '#responsible-ai-principles',
+    },
+    {
+      objective: 'Identify potential harms and mitigation strategies of AI usage',
+      section: 'Match a harm to a mitigation',
+      href: '#harm-to-mitigation',
+    },
+    {
+      objective: 'Explain the need to validate AI output',
+      section: 'Validate before accepting',
+      href: '#validate-before-accepting',
+    },
+    {
+      objective: 'Identify how to operate GitHub Copilot responsibly',
+      section: 'Responsible operation workflow',
+      href: '#responsible-operation-workflow',
+    },
   ],
   notesTitle: 'Study notes',
   notes: [
@@ -130,23 +150,59 @@ const english: PageCopy = {
   principlesTitle: 'Six principles as a review lens',
   principleQuestion: 'Question for a Copilot-assisted change',
   principles: [
-    { name: 'Fairness', question: 'Could the code or data disadvantage a group of users?' },
-    { name: 'Reliability and safety', question: 'Does it fail safely and behave as intended under stress?' },
-    { name: 'Privacy and security', question: 'Does it protect secrets, personal data, and permissions?' },
-    { name: 'Inclusiveness', question: 'Can people with different abilities and backgrounds use the result?' },
-    { name: 'Transparency', question: 'Can a reviewer understand the origin, assumptions, and behaviour?' },
-    { name: 'Accountability', question: 'Is a named human responsible for the accepted change?' },
+    {
+      name: 'Fairness',
+      question: 'Could the code or data disadvantage a group of users?',
+    },
+    {
+      name: 'Reliability and safety',
+      question: 'Does it fail safely and behave as intended under stress?',
+    },
+    {
+      name: 'Privacy and security',
+      question: 'Does it protect secrets, personal data, and permissions?',
+    },
+    {
+      name: 'Inclusiveness',
+      question: 'Can people with different abilities and backgrounds use the result?',
+    },
+    {
+      name: 'Transparency',
+      question: 'Can a reviewer understand the origin, assumptions, and behaviour?',
+    },
+    {
+      name: 'Accountability',
+      question: 'Is a named human responsible for the accepted change?',
+    },
   ],
   harmsTitle: 'Match a harm to a mitigation',
   harmHeading: 'Potential harm',
   mitigationHeading: 'Useful mitigation',
   harms: [
-    { harm: 'Incorrect or fabricated logic', mitigation: 'Tests, API verification, edge-case review' },
-    { harm: 'Insecure implementation', mitigation: 'Threat modelling, code review, static analysis, dependency checks' },
-    { harm: 'Sensitive data in context', mitigation: 'Content exclusions, secret scanning, prompt hygiene' },
-    { harm: 'Biased or outdated behaviour', mitigation: 'Inclusive requirements, current standards, representative tests' },
-    { harm: 'Licence or attribution concern', mitigation: 'Public-code matching controls and human licence review' },
-    { harm: 'Blind acceptance', mitigation: 'Small diffs, approval gates, and explicit ownership' },
+    {
+      harm: 'Incorrect or fabricated logic',
+      mitigation: 'Tests, API verification, edge-case review',
+    },
+    {
+      harm: 'Insecure implementation',
+      mitigation: 'Threat modelling, code review, static analysis, dependency checks',
+    },
+    {
+      harm: 'Sensitive data in context',
+      mitigation: 'Content exclusions, secret scanning, prompt hygiene',
+    },
+    {
+      harm: 'Biased or outdated behaviour',
+      mitigation: 'Inclusive requirements, current standards, representative tests',
+    },
+    {
+      harm: 'Licence or attribution concern',
+      mitigation: 'Public-code matching controls and human licence review',
+    },
+    {
+      harm: 'Blind acceptance',
+      mitigation: 'Small diffs, approval gates, and explicit ownership',
+    },
   ],
   checklistTitle: 'Practice checklist',
   checklist: [
@@ -158,9 +214,18 @@ const english: PageCopy = {
   ],
   referencesTitle: 'Official references',
   references: [
-    { label: 'GH-300 study guide', href: 'https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-300' },
-    { label: 'Responsible AI with GitHub Copilot', href: 'https://learn.microsoft.com/en-us/training/modules/responsible-ai-with-github-copilot/' },
-    { label: 'GitHub Copilot documentation', href: 'https://docs.github.com/en/copilot' },
+    {
+      label: 'GH-300 study guide',
+      href: 'https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-300',
+    },
+    {
+      label: 'Responsible AI with GitHub Copilot',
+      href: 'https://learn.microsoft.com/en-us/training/modules/responsible-ai-with-github-copilot/',
+    },
+    {
+      label: 'GitHub Copilot documentation',
+      href: 'https://docs.github.com/en/copilot',
+    },
     { label: 'GitHub Trust Center', href: 'https://github.com/trust-center' },
   ],
   tocTitle: 'On this page',
@@ -212,11 +277,31 @@ const french: PageCopy = {
   coverageIntro:
     'Le guide d’étude Microsoft place ce domaine dans deux groupes de compétences. Le tableau relie chaque objectif officiel aux notes ci-dessous.',
   coverageRows: [
-    { objective: 'Décrire les risques et les limites des outils d’IA générative', section: 'Risques et limites', href: '#risques-et-limites' },
-    { objective: 'Décrire une utilisation éthique et responsable de l’IA', section: 'Principes d’IA responsable', href: '#principes-dia-responsable' },
-    { objective: 'Identifier les préjudices possibles et les mesures d’atténuation', section: 'Relier un préjudice à une atténuation', href: '#prejudice-et-attenuation' },
-    { objective: 'Expliquer pourquoi les résultats de l’IA doivent être validés', section: 'Valider avant d’accepter', href: '#valider-avant-daccepter' },
-    { objective: 'Identifier comment utiliser GitHub Copilot de manière responsable', section: 'Workflow d’utilisation responsable', href: '#workflow-utilisation-responsable' },
+    {
+      objective: 'Décrire les risques et les limites des outils d’IA générative',
+      section: 'Risques et limites',
+      href: '#risques-et-limites',
+    },
+    {
+      objective: 'Décrire une utilisation éthique et responsable de l’IA',
+      section: 'Principes d’IA responsable',
+      href: '#principes-dia-responsable',
+    },
+    {
+      objective: 'Identifier les préjudices possibles et les mesures d’atténuation',
+      section: 'Relier un préjudice à une atténuation',
+      href: '#prejudice-et-attenuation',
+    },
+    {
+      objective: 'Expliquer pourquoi les résultats de l’IA doivent être validés',
+      section: 'Valider avant d’accepter',
+      href: '#valider-avant-daccepter',
+    },
+    {
+      objective: 'Identifier comment utiliser GitHub Copilot de manière responsable',
+      section: 'Workflow d’utilisation responsable',
+      href: '#workflow-utilisation-responsable',
+    },
   ],
   notesTitle: 'Notes d’étude',
   notes: [
@@ -266,23 +351,59 @@ const french: PageCopy = {
   principlesTitle: 'Six principes comme grille de revue',
   principleQuestion: 'Question pour une modification assistée par Copilot',
   principles: [
-    { name: 'Équité', question: 'Le code ou les données peuvent-ils défavoriser un groupe d’utilisateurs ?' },
-    { name: 'Fiabilité et sécurité', question: 'Le résultat échoue-t-il de manière sûre et se comporte-t-il comme prévu ?' },
-    { name: 'Confidentialité et sécurité', question: 'Les secrets, les données personnelles et les permissions sont-ils protégés ?' },
-    { name: 'Inclusion', question: 'Des personnes aux capacités et profils différents peuvent-elles utiliser le résultat ?' },
-    { name: 'Transparence', question: 'Un relecteur peut-il comprendre l’origine, les hypothèses et le comportement ?' },
-    { name: 'Responsabilité', question: 'Une personne nommée est-elle responsable du changement accepté ?' },
+    {
+      name: 'Équité',
+      question: 'Le code ou les données peuvent-ils défavoriser un groupe d’utilisateurs ?',
+    },
+    {
+      name: 'Fiabilité et sécurité',
+      question: 'Le résultat échoue-t-il de manière sûre et se comporte-t-il comme prévu ?',
+    },
+    {
+      name: 'Confidentialité et sécurité',
+      question: 'Les secrets, les données personnelles et les permissions sont-ils protégés ?',
+    },
+    {
+      name: 'Inclusion',
+      question: 'Des personnes aux capacités et profils différents peuvent-elles utiliser le résultat ?',
+    },
+    {
+      name: 'Transparence',
+      question: 'Un relecteur peut-il comprendre l’origine, les hypothèses et le comportement ?',
+    },
+    {
+      name: 'Responsabilité',
+      question: 'Une personne nommée est-elle responsable du changement accepté ?',
+    },
   ],
   harmsTitle: 'Relier un préjudice à une atténuation',
   harmHeading: 'Préjudice possible',
   mitigationHeading: 'Atténuation utile',
   harms: [
-    { harm: 'Logique incorrecte ou inventée', mitigation: 'Tests, vérification des API et revue des cas limites' },
-    { harm: 'Implémentation vulnérable', mitigation: 'Modélisation des menaces, revue de code et analyse statique' },
-    { harm: 'Donnée sensible dans le contexte', mitigation: 'Exclusions de contenu, détection de secrets et hygiène des prompts' },
-    { harm: 'Comportement biaisé ou ancien', mitigation: 'Exigences inclusives, standards actuels et tests représentatifs' },
-    { harm: 'Problème de licence ou d’attribution', mitigation: 'Filtrage du code public et revue humaine des licences' },
-    { harm: 'Acceptation aveugle', mitigation: 'Petites différences, approbation et responsabilité explicite' },
+    {
+      harm: 'Logique incorrecte ou inventée',
+      mitigation: 'Tests, vérification des API et revue des cas limites',
+    },
+    {
+      harm: 'Implémentation vulnérable',
+      mitigation: 'Modélisation des menaces, revue de code et analyse statique',
+    },
+    {
+      harm: 'Donnée sensible dans le contexte',
+      mitigation: 'Exclusions de contenu, détection de secrets et hygiène des prompts',
+    },
+    {
+      harm: 'Comportement biaisé ou ancien',
+      mitigation: 'Exigences inclusives, standards actuels et tests représentatifs',
+    },
+    {
+      harm: 'Problème de licence ou d’attribution',
+      mitigation: 'Filtrage du code public et revue humaine des licences',
+    },
+    {
+      harm: 'Acceptation aveugle',
+      mitigation: 'Petites différences, approbation et responsabilité explicite',
+    },
   ],
   checklistTitle: 'Liste de vérification',
   checklist: [
@@ -294,9 +415,18 @@ const french: PageCopy = {
   ],
   referencesTitle: 'Références officielles',
   references: [
-    { label: 'Guide d’étude GH-300', href: 'https://learn.microsoft.com/fr-fr/credentials/certifications/resources/study-guides/gh-300' },
-    { label: 'IA responsable avec GitHub Copilot', href: 'https://learn.microsoft.com/en-us/training/modules/responsible-ai-with-github-copilot/' },
-    { label: 'Documentation GitHub Copilot', href: 'https://docs.github.com/fr/copilot' },
+    {
+      label: 'Guide d’étude GH-300',
+      href: 'https://learn.microsoft.com/fr-fr/credentials/certifications/resources/study-guides/gh-300',
+    },
+    {
+      label: 'IA responsable avec GitHub Copilot',
+      href: 'https://learn.microsoft.com/en-us/training/modules/responsible-ai-with-github-copilot/',
+    },
+    {
+      label: 'Documentation GitHub Copilot',
+      href: 'https://docs.github.com/fr/copilot',
+    },
     { label: 'GitHub Trust Center', href: 'https://github.com/trust-center' },
   ],
   tocTitle: 'Sur cette page',
@@ -305,7 +435,10 @@ const french: PageCopy = {
     { label: 'Couverture officielle', href: '#couverture-officielle' },
     { label: 'Notes d’étude', href: '#notes-detude' },
     { label: 'Six principes', href: '#six-principes' },
-    { label: 'Relier préjudice et atténuation', href: '#prejudice-et-attenuation' },
+    {
+      label: 'Relier préjudice et atténuation',
+      href: '#prejudice-et-attenuation',
+    },
     { label: 'Liste de vérification', href: '#liste-de-verification' },
     { label: 'Références officielles', href: '#references-officielles' },
   ],
@@ -364,7 +497,7 @@ onBeforeUnmount(() => sectionObserver?.disconnect())
 
 <template>
   <div class="responsible-page" :lang="isFrench ? 'fr' : 'en'">
-    <nav class="study-breadcrumb" aria-label="Breadcrumb">
+    <nav class="study-breadcrumb" :aria-label="isFrench ? 'Fil d’Ariane' : 'Breadcrumb'">
       <a :href="homeLink" aria-label="Home">⌂</a>
       <span aria-hidden="true">›</span>
       <a :href="homeLink">{{ copy.breadcrumbHome }}</a>
@@ -403,7 +536,10 @@ onBeforeUnmount(() => sectionObserver?.disconnect())
           </ul>
         </section>
 
-        <section class="study-card coverage-card" :id="isFrench ? 'couverture-officielle' : 'official-exam-coverage'">
+        <section
+          class="study-card coverage-card"
+          :id="isFrench ? 'couverture-officielle' : 'official-exam-coverage'"
+        >
           <h2><span class="section-icon" aria-hidden="true">▤</span>{{ copy.coverageTitle }}</h2>
           <p class="card-intro">{{ copy.coverageIntro }}</p>
           <div class="table-scroll">
@@ -424,10 +560,18 @@ onBeforeUnmount(() => sectionObserver?.disconnect())
           </div>
         </section>
 
-        <section class="study-card notes-card" :id="isFrench ? 'notes-detude' : 'study-notes'">
+        <section
+          class="study-card notes-card"
+          :id="isFrench ? 'notes-detude' : 'study-notes'"
+        >
           <h2><span class="section-icon" aria-hidden="true">▣</span>{{ copy.notesTitle }}</h2>
           <div class="note-accordions">
-            <details v-for="(note, index) in copy.notes" :key="note.id" class="study-accordion" :id="`accordion-${note.id}`">
+            <details
+              v-for="(note, index) in copy.notes"
+              :key="note.id"
+              class="study-accordion"
+              :id="`accordion-${note.id}`"
+            >
               <summary>
                 <span class="note-number">{{ index + 1 }}</span>
                 <span>{{ note.title }}</span>
@@ -451,7 +595,10 @@ onBeforeUnmount(() => sectionObserver?.disconnect())
         </section>
 
         <div class="study-pair">
-          <section class="study-card table-card" :id="isFrench ? 'six-principes' : 'six-principles'">
+          <section
+            class="study-card table-card"
+            :id="isFrench ? 'six-principes' : 'six-principles'"
+          >
             <h2><span class="section-icon" aria-hidden="true">▱</span>{{ copy.principlesTitle }}</h2>
             <div class="table-scroll">
               <table>
@@ -471,7 +618,10 @@ onBeforeUnmount(() => sectionObserver?.disconnect())
             </div>
           </section>
 
-          <section class="study-card table-card" :id="isFrench ? 'prejudice-et-attenuation' : 'harm-to-mitigation'">
+          <section
+            class="study-card table-card"
+            :id="isFrench ? 'prejudice-et-attenuation' : 'harm-to-mitigation'"
+          >
             <h2><span class="section-icon green-icon" aria-hidden="true">⬡</span>{{ copy.harmsTitle }}</h2>
             <div class="table-scroll">
               <table>
@@ -493,7 +643,10 @@ onBeforeUnmount(() => sectionObserver?.disconnect())
         </div>
 
         <div class="study-pair lower-pair">
-          <section class="study-card checklist-card" :id="isFrench ? 'liste-de-verification' : 'practice-checklist'">
+          <section
+            class="study-card checklist-card"
+            :id="isFrench ? 'liste-de-verification' : 'practice-checklist'"
+          >
             <h2><span class="section-icon green-icon" aria-hidden="true">☑</span>{{ copy.checklistTitle }}</h2>
             <ul class="checklist">
               <li v-for="item in copy.checklist" :key="item">
@@ -502,7 +655,10 @@ onBeforeUnmount(() => sectionObserver?.disconnect())
             </ul>
           </section>
 
-          <section class="study-card references-card" :id="isFrench ? 'references-officielles' : 'official-references'">
+          <section
+            class="study-card references-card"
+            :id="isFrench ? 'references-officielles' : 'official-references'"
+          >
             <h2><span class="section-icon" aria-hidden="true">↗</span>{{ copy.referencesTitle }}</h2>
             <ul class="reference-list">
               <li v-for="reference in copy.references" :key="reference.href">
@@ -528,32 +684,59 @@ onBeforeUnmount(() => sectionObserver?.disconnect())
 
       <aside class="study-rail">
         <nav class="study-card toc-card" :aria-label="copy.tocTitle">
-          <h2><span class="rail-icon" aria-hidden="true">☷</span>{{ copy.tocTitle }}</h2>
+          <h2>
+            <span class="rail-icon" aria-hidden="true">☷</span>
+            {{ copy.tocTitle }}
+          </h2>
           <ul>
             <li v-for="item in copy.toc" :key="item.href" :class="{ active: activeSection === item.href }">
-              <a :href="item.href"><span aria-hidden="true">{{ index === 0 ? '▱' : '⌑' }}</span>{{ item.label }}</a>
+              <a :href="item.href"><span aria-hidden="true">▪</span>{{ item.label }}</a>
             </li>
           </ul>
         </nav>
 
         <section class="study-card info-card">
-          <h2><span class="rail-icon" aria-hidden="true">ⓘ</span>{{ copy.infoTitle }}</h2>
+          <h2>
+            <span class="rail-icon" aria-hidden="true">ⓘ</span>
+            {{ copy.infoTitle }}
+          </h2>
           <dl>
-            <div><dt>{{ copy.examWeight }}</dt><dd>{{ copy.examWeightValue }}</dd></div>
-            <div><dt>{{ copy.level }}</dt><dd>{{ copy.levelValue }}</dd></div>
-            <div><dt>{{ copy.time }}</dt><dd>{{ copy.timeValue }}</dd></div>
-            <div><dt>{{ copy.type }}</dt><dd>{{ copy.typeValue }}</dd></div>
+            <div>
+              <dt>{{ copy.examWeight }}</dt>
+              <dd>{{ copy.examWeightValue }}</dd>
+            </div>
+            <div>
+              <dt>{{ copy.level }}</dt>
+              <dd>{{ copy.levelValue }}</dd>
+            </div>
+            <div>
+              <dt>{{ copy.time }}</dt>
+              <dd>{{ copy.timeValue }}</dd>
+            </div>
+            <div>
+              <dt>{{ copy.type }}</dt>
+              <dd>{{ copy.typeValue }}</dd>
+            </div>
           </dl>
         </section>
 
         <section class="study-card tip-card">
-          <h2><span class="rail-icon" aria-hidden="true">♧</span>{{ copy.tipTitle }}</h2>
+          <h2>
+            <span class="rail-icon" aria-hidden="true">♧</span>
+            {{ copy.tipTitle }}
+          </h2>
           <p>{{ copy.tip }}</p>
         </section>
 
         <section class="study-card resource-card">
-          <h2><span class="rail-icon" aria-hidden="true">♧</span>{{ copy.resourceTitle }}</h2>
-          <div class="resource-type"><span aria-hidden="true">♧</span><strong>{{ copy.resourceType }}</strong></div>
+          <h2>
+            <span class="rail-icon" aria-hidden="true">♧</span>
+            {{ copy.resourceTitle }}
+          </h2>
+          <div class="resource-type">
+            <span aria-hidden="true">♧</span>
+            <strong>{{ copy.resourceType }}</strong>
+          </div>
           <p>{{ copy.resourceBody }}</p>
           <a class="resource-button" :href="labLink">{{ copy.resourceButton }} <span aria-hidden="true">→</span></a>
         </section>
