@@ -10,6 +10,18 @@ This domain represents **15–20%** of the GH-300 exam. The focus is not on memo
 - Explain why Copilot output must be validated.
 - Operate Copilot in a way that preserves human accountability.
 
+## Official exam coverage
+
+The Microsoft study guide groups this domain into two skill areas. The table below maps each official objective to the notes on this page.
+
+| Official objective | Where to revise it |
+| --- | --- |
+| Describe risks and limitations of Generative AI tools | [Risks and limitations](#risks-and-limitations) |
+| Describe ethical and responsible AI usage | [Responsible AI principles](#responsible-ai-principles-in-practice) |
+| Identify potential harms and mitigation strategies of AI usage | [Match a harm to a mitigation](#match-a-harm-to-a-mitigation) |
+| Explain the need to validate AI output | [Validate before accepting](#validate-before-accepting) |
+| Identify how to operate GitHub Copilot responsibly | [Responsible operation workflow](#responsible-operation-workflow) |
+
 ## Study notes
 
 ### Risks and limitations
@@ -36,6 +48,40 @@ The developer and the organisation remain responsible for the software they ship
 ### Validate before accepting
 
 Treat a suggestion as a draft. Check its behaviour against the requirement, run existing tests, add tests for new paths, inspect error handling and edge cases, and verify every API or dependency it references. Apply normal code review, security scanning, licensing review, and release controls.
+
+### Responsible operation workflow
+
+Use this sequence when a scenario asks how to operate Copilot responsibly:
+
+1. **Define the task and boundaries.** State the requirement, permitted data, affected users, and acceptance criteria before prompting.
+2. **Choose the smallest useful context.** Exclude secrets, personal data, and unrelated proprietary material. Follow the repository and organisation policies.
+3. **Treat the response as untrusted draft output.** Check APIs, dependencies, assumptions, permissions, error handling, and edge cases.
+4. **Validate with evidence.** Run tests, security and quality checks, licence review, and a focused human code review.
+5. **Keep human ownership.** Record who approved the change, what was checked, and what monitoring or rollback is available after release.
+
+The safest answer is not to accept a plausible suggestion blindly or to assume that a policy setting makes generated code correct.
+
+### Six principles as a review lens
+
+| Principle | Question for a Copilot-assisted change |
+| --- | --- |
+| Fairness | Could the code or data disadvantage a group of users? |
+| Reliability and safety | Does it fail safely and behave as intended under stress? |
+| Privacy and security | Does it protect secrets, personal data, and permissions? |
+| Inclusiveness | Can people with different abilities and backgrounds use the result? |
+| Transparency | Can a reviewer understand the origin, assumptions, and behaviour? |
+| Accountability | Is a named human responsible for the accepted change? |
+
+### Match a harm to a mitigation
+
+| Potential harm | Useful mitigation |
+| --- | --- |
+| Incorrect or fabricated logic | Tests, API verification, edge-case review |
+| Insecure implementation | Threat modelling, code review, static analysis, dependency checks |
+| Sensitive data in context | Content exclusions, secret scanning, prompt hygiene |
+| Biased or outdated behaviour | Inclusive requirements, current standards, representative tests |
+| Licence or attribution concern | Public-code matching controls and human licence review |
+| Blind acceptance | Small diffs, approval gates, and explicit ownership |
 
 ## Practice checklist
 

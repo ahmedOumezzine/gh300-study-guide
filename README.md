@@ -19,14 +19,19 @@ Prepare for the **GitHub Copilot (GH-300)** certification with bilingual study n
 
 | English | Français |
 | --- | --- |
-| [Responsible AI](docs/responsible-ai/index.md) | [IA responsable](docs/fr/responsible-ai/index.md) |
-| [Copilot features](docs/copilot-features/index.md) | [Fonctionnalités de Copilot](docs/fr/copilot-features/index.md) |
-| [Data and architecture](docs/data-architecture/index.md) | [Données et architecture](docs/fr/data-architecture/index.md) |
-| [Prompt engineering](docs/prompt-engineering/index.md) | [Conception des requêtes](docs/fr/prompt-engineering/index.md) |
-| [Developer productivity](docs/developer-productivity/index.md) | [Productivité des développeurs](docs/fr/developer-productivity/index.md) |
-| [Privacy and safeguards](docs/privacy-safeguards/index.md) | [Confidentialité et protections](docs/fr/privacy-safeguards/index.md) |
+| [Use GitHub Copilot responsibly](docs/responsible-ai/index.md) | [Utiliser GitHub Copilot de manière responsable](docs/fr/responsible-ai/index.md) |
+| [Use GitHub Copilot features](docs/copilot-features/index.md) | [Utiliser les fonctionnalités de GitHub Copilot](docs/fr/copilot-features/index.md) |
+| [Understand GitHub Copilot data and architecture](docs/data-architecture/index.md) | [Comprendre les données et l’architecture de GitHub Copilot](docs/fr/data-architecture/index.md) |
+| [Apply prompt engineering and context crafting](docs/prompt-engineering/index.md) | [Appliquer la conception des prompts et du contexte](docs/fr/prompt-engineering/index.md) |
+| [Improve developer productivity with GitHub Copilot](docs/developer-productivity/index.md) | [Améliorer la productivité avec GitHub Copilot](docs/fr/developer-productivity/index.md) |
+| [Configure privacy, content exclusions, and safeguards](docs/privacy-safeguards/index.md) | [Configurer la confidentialité, les exclusions de contenu et les protections](docs/fr/privacy-safeguards/index.md) |
+| [Exam tips](docs/exam-tips/index.md) | [Conseils d’examen](docs/fr/exam-tips/index.md) |
 
 Use the [official Microsoft Learn exam objectives](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-300) to plan your study and [GitHub Docs](https://docs.github.com/en/copilot) to check current Copilot behavior.
+
+The [capabilities and policies](docs/copilot-capabilities/index.md) page is a supporting subtopic of the official Copilot features domain, not a seventh domain.
+
+La page [Capacités et politiques](docs/fr/copilot-capabilities/index.md) est un sous-thème du domaine officiel des fonctionnalités Copilot, et non un septième domaine.
 
 Consultez les [objectifs officiels en français](https://learn.microsoft.com/fr-fr/credentials/certifications/resources/study-guides/gh-300) pour planifier votre révision et la [documentation GitHub](https://docs.github.com/fr/copilot) pour vérifier le fonctionnement actuel de Copilot.
 

@@ -10,6 +10,18 @@ Ce domaine représente **15–20 %** de l’examen GH-300. L’objectif est de r
 - Expliquer pourquoi il faut valider les résultats de Copilot.
 - Utiliser Copilot tout en conservant une responsabilité humaine claire.
 
+## Couverture officielle de l’examen
+
+Le guide d’étude Microsoft divise ce domaine en deux groupes de compétences. Le tableau relie chaque objectif officiel aux notes de cette page.
+
+| Objectif officiel | Partie à réviser |
+| --- | --- |
+| Décrire les risques et les limites des outils d’IA générative | [Risques et limites](#risques-et-limites) |
+| Expliquer une utilisation éthique et responsable de l’IA | [Principes responsables](#principes-responsables-en-pratique) |
+| Identifier les préjudices possibles et les mesures d’atténuation | [Relier un préjudice à une atténuation](#relier-un-préjudice-à-une-atténuation) |
+| Expliquer pourquoi il faut valider les résultats de l’IA | [Valider avant d’accepter](#valider-avant-daccepter) |
+| Identifier comment utiliser GitHub Copilot de manière responsable | [Workflow d’utilisation responsable](#workflow-dutilisation-responsable) |
+
 ## Notes d’étude
 
 ### Risques et limites
@@ -36,6 +48,40 @@ Le développeur et l’organisation restent responsables du logiciel livré. Cop
 ### Valider avant d’accepter
 
 Traitez chaque suggestion comme une ébauche. Vérifiez le comportement par rapport au besoin, exécutez les tests, ajoutez les tests des nouveaux chemins, inspectez les erreurs et vérifiez les API ou dépendances citées.
+
+### Workflow d’utilisation responsable
+
+Utilisez cette séquence lorsqu’un scénario demande comment utiliser Copilot de manière responsable :
+
+1. **Définir la tâche et les limites.** Préciser le besoin, les données autorisées, les utilisateurs concernés et les critères d’acceptation avant le prompt.
+2. **Choisir le contexte utile minimal.** Exclure les secrets, les données personnelles et les informations propriétaires inutiles. Respecter les politiques du dépôt et de l’organisation.
+3. **Traiter la réponse comme une ébauche non fiable.** Vérifier les API, les dépendances, les hypothèses, les permissions, les erreurs et les cas limites.
+4. **Valider avec des preuves.** Exécuter les tests, les contrôles de sécurité et de qualité, la revue de licence et une revue humaine ciblée.
+5. **Conserver la responsabilité humaine.** Noter le relecteur, les contrôles réalisés et le plan de surveillance ou de retour arrière après livraison.
+
+La réponse la plus sûre n’est pas d’accepter aveuglément une suggestion plausible ni de supposer qu’une politique rend automatiquement le code généré correct.
+
+### Six principes comme grille de revue
+
+| Principe | Question pour une modification assistée par Copilot |
+| --- | --- |
+| Équité | Le code ou les données peuvent-ils défavoriser un groupe ? |
+| Fiabilité et sécurité | Le résultat échoue-t-il de manière sûre ? |
+| Confidentialité et sécurité | Les secrets, données personnelles et permissions sont-ils protégés ? |
+| Inclusion | Des personnes aux capacités et profils différents peuvent-elles l’utiliser ? |
+| Transparence | Les hypothèses et le comportement sont-ils compréhensibles ? |
+| Responsabilité | Une personne est-elle responsable du changement accepté ? |
+
+### Relier un préjudice à une atténuation
+
+| Préjudice possible | Atténuation utile |
+| --- | --- |
+| Logique incorrecte ou inventée | Tests, vérification des API et cas limites |
+| Implémentation vulnérable | Modélisation des menaces, revue et analyse statique |
+| Donnée sensible dans le contexte | Exclusions, détection de secrets et hygiène des prompts |
+| Comportement biaisé ou ancien | Exigences inclusives, standards actuels et tests représentatifs |
+| Licence ou attribution | Filtrage du code public et revue humaine de licence |
+| Acceptation aveugle | Petites différences, approbation et responsabilité explicite |
 
 ## Liste de vérification
 
