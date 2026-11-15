@@ -913,25 +913,6 @@ body,
   border-radius: 8px;
 }
 
-@media (min-width: 1400px) {
-  .VPSidebar .nav {
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .VPSidebar .VPSidebarItem.level-0:first-child > .items {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 2px 12px;
-  }
-
-  .VPSidebar .VPSidebarItem.level-0:nth-child(2) > .items {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 2px 8px;
-  }
-}
-
 .VPSidebar .VPSidebarItem.is-active > .item .link {
   background: #e2edff;
 }
@@ -946,16 +927,17 @@ body:has(.study-page-header) .VPDoc {
 }
 
 body:has(.study-page-header) .VPDoc .container {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 230px;
   align-items: flex-start;
-  gap: 0;
+  justify-content: initial;
+  gap: 16px;
   max-width: none;
 }
 
 body:has(.study-page-header) .VPDoc .content {
-  order: 1;
-  flex: 1 1 0;
-  width: auto;
+  grid-column: 1;
+  width: 100%;
   max-width: none;
   min-width: 0;
   margin: 0;
@@ -967,17 +949,17 @@ body:has(.study-page-header) .VPDoc .content {
 }
 
 body:has(.study-page-header) .VPDoc .content-container {
-  max-width: none;
+  width: 100%;
+  max-width: none !important;
   margin: 0;
 }
 
 body:has(.study-page-header) .VPDoc .aside {
+  grid-column: 2;
   display: block;
-  order: 2;
-  flex: 0 0 230px;
   width: 230px;
   max-width: 230px;
-  padding-left: 14px;
+  padding-left: 0;
 }
 
 body:has(.study-page-header) .VPDoc .aside-container {
@@ -1256,11 +1238,11 @@ body:has(.study-page-header) .study-doc-rail-mobile {
   mask-image: linear-gradient(to right, transparent 0%, #000 24%);
 }
 
-body:has(.study-page-header) .vp-doc > h1:first-child {
+body:has(.study-page-header) .vp-doc h1:first-of-type {
   display: none;
 }
 
-body:has(.study-page-header) .vp-doc > h1:first-child + p {
+body:has(.study-page-header) .vp-doc h1:first-of-type + p {
   margin: 0 0 14px;
   padding: 13px 16px;
   border: 1px solid #dfe7f2;
@@ -1272,8 +1254,8 @@ body:has(.study-page-header) .vp-doc > h1:first-child + p {
   line-height: 1.5;
 }
 
-body:has(.study-page-header) .vp-doc > h1:first-child + ul,
-body:has(.study-page-header) .vp-doc > h1:first-child + ol {
+body:has(.study-page-header) .vp-doc h1:first-of-type + ul,
+body:has(.study-page-header) .vp-doc h1:first-of-type + ol {
   margin: 0 0 14px;
   padding: 13px 18px 13px 34px;
   border: 1px solid #dfe7f2;
@@ -1655,7 +1637,7 @@ body:has(.study-page-header) .VPDocFooter .pager-link:hover {
   --vp-font-family-base: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --vp-c-bg-alt: #f3f7ff;
   --vp-nav-height: 48px;
-  --vp-sidebar-width: 208px;
+  --vp-sidebar-width: 240px;
 }
 
 .VPNav {
