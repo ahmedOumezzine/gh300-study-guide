@@ -16,7 +16,7 @@ const homeLink = computed(() => withBase(locale.value === 'fr' ? '/fr/' : '/'))
   <div class="study-page-header" :lang="locale">
     <nav
       class="study-breadcrumb"
-      :aria-label="locale === 'fr' ? 'Fil d'Ariane' : 'Breadcrumb'"
+      :aria-label="locale === 'fr' ? 'Fil d’Ariane' : 'Breadcrumb'"
     >
       <a :href="homeLink" :aria-label="locale === 'fr' ? 'Accueil' : 'Home'">⌂</a>
       <span aria-hidden="true">›</span>
